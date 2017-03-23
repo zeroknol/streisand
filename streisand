@@ -21,6 +21,7 @@ then
 fi
 
 echo -n "Which provider are you using?
+  0. Local Connection
   1. Amazon
   2. DigitalOcean
   3. Google
@@ -31,6 +32,7 @@ echo -n "Which provider are you using?
 read reply
 
 case "$reply" in
+  0) echo; echo; ansible-playbook playbooks/streisand.yml --connection=local;;
   1) echo; echo; ansible-playbook playbooks/amazon.yml;;
   2) echo; echo; ansible-playbook playbooks/digitalocean.yml;;
   3) echo; echo; ansible-playbook playbooks/google.yml;;

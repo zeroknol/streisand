@@ -22,3 +22,5 @@ localhost ansible_connection=local ansible_python_interpreter=python
 #
 # [streisand-host]
 # 255.255.255.255 ansible_user=ubuntu
+[streisand-host]
+localhost ansible_connection=local ansible_python_interpreter=python
